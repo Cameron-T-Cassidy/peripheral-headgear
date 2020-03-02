@@ -6,3 +6,4 @@ Run the following installs:
 
 Usage code can be found in Lidar.py.
 This information can be found [here](https://github.com/adafruit/Adafruit_CircuitPython_LIDARLite).
+There is also [this](https://github.com/Sanderi44/Lidar-Lite) library using 12c. A demo for it can be found [here](https://mobiusstripblog.wordpress.com/2016/12/26/first-blog-post/). 
