@@ -41,11 +41,11 @@ def alert(num_cycles):
 try:
     while True:
         try:
-            if sensor.distance, <= threshold:
+            if sensor.distance <= threshold:
                 print((sensor.distance,))
-                if sensor.distance, >= 200:
+                if sensor.distance >= 200:
                     alert(2)
-                elif sensor.distance, >= 100:
+                elif sensor.distance >= 100:
                     alert(4)
                 else:
                     alert(6)
@@ -55,6 +55,6 @@ try:
             print(e)
         time.sleep(0.01) # you can remove this for ultra-fast measurements!
     
-    except KeyboardInterrupt:
-        print("Ctrl-C Pressed: Exiting Program")
-    GPIO.cleanup()
+except KeyboardInterrupt:
+    print("Ctrl-C Pressed: Exiting Program")
+GPIO.cleanup()
