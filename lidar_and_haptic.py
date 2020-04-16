@@ -43,9 +43,9 @@ try:
         try:
             if sensor.distance <= threshold:
                 print((sensor.distance,))
-                if sensor.distance >= 200:
+                if sensor.distance >= (threshold * (2/3)):
                     alert(2)
-                elif sensor.distance >= 100:
+                elif sensor.distance >= (threshold * (1/3)):
                     alert(4)
                 else:
                     alert(6)
