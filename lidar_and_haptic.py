@@ -41,11 +41,12 @@ def alert(num_cycles):
 try:
     while True:
         try:
-            if sensor.distance <= threshold:
-                print((sensor.distance,))
-                if sensor.distance >= (threshold * (2/3)):
+            curr_distance = sensor.distance
+            if curr_distance <= threshold:
+                print((curr_distance,))
+                if curr_distance >= (threshold * (2/3)):
                     alert(2)
-                elif sensor.distance >= (threshold * (1/3)):
+                elif curr_distance >= (threshold * (1/3)):
                     alert(4)
                 else:
                     alert(6)
