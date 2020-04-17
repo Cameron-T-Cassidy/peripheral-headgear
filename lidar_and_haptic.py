@@ -34,8 +34,8 @@ def print_cycle(channel, num_cycles):
         print(channel)
         
 def alert(num_cycles):
-    #cycle(haptic_channel, num_cycles)
-    print_cycle(haptic_channel, num_cycles)
+    cycle(haptic_channel, num_cycles)
+    #print_cycle(haptic_channel, num_cycles)
 
 try:
     while True:

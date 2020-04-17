@@ -25,16 +25,14 @@ def print_cycle(channel, num_cycles):
         print(channel)
         
 def alert(num_cycles):
-    #cycle(haptic_channel, num_cycles)
-    print_cycle(haptic_channel, num_cycles)
-
-if __name__ == "__main__":      
-    try:
-        while True:
-            num_cycles = input("Enter number of cycles: ")
-            alert(num_cycles)
-            
-    except KeyboardInterrupt:
-        print("Ctrl-C Pressed: Exiting Program")
-
-    GPIO.cleanup()
+    cycle(haptic_channel, num_cycles)
+    #print_cycle(haptic_channel, num_cycles)
+    
+try:
+    while True:
+        num_cycles = int(input("Enter number of cycles: "))
+        alert(num_cycles)
+        
+except KeyboardInterrupt:
+    print("Ctrl-C Pressed: Exiting Program")
+GPIO.cleanup()
