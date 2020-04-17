@@ -1,9 +1,9 @@
 import RPi.GPIO as GPIO
 import time
 
-haptic_channel = 16
+haptic_channel = 23
 
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 GPIO.setup(haptic_channel, GPIO.OUT)
 
 def on(channel):

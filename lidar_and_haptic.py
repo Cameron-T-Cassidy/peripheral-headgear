@@ -10,8 +10,7 @@ i2c = busio.I2C(board.SCL, board.SDA)
 sensor = adafruit_lidarlite.LIDARLite(i2c)
 
 # channel for vibration motor
-haptic_channel = 16
-GPIO.setmode(GPIO.BOARD)
+haptic_channel = 23
 GPIO.setup(haptic_channel, GPIO.OUT)
 
 threshold = 300
