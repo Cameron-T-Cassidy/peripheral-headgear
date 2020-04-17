@@ -13,7 +13,7 @@ sensor = adafruit_lidarlite.LIDARLite(i2c)
 haptic_channel = 23
 GPIO.setup(haptic_channel, GPIO.OUT)
 
-threshold = 300
+threshold = 100
 
 def on(channel):
     GPIO.output(channel, GPIO.HIGH)
