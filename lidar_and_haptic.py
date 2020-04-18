@@ -22,11 +22,27 @@ def off(channel):
     GPIO.output(channel, GPIO.LOW)
     
 def cycle(channel, num_cycles):
-    for i in range(0, num_cycles):
-        on(channel)
-        time.sleep(0.75)
-        off(channel)
-        time.sleep(0.25)
+    if num_cycles == 2:
+        for i in range(0, num_cycles):
+            on(channel)
+            time.sleep(0.75)
+            off(channel)
+            time.sleep(0.25)
+
+    elif num_cycles == 4:
+        for i in range(0, num_cycles):
+            on(channel)
+            time.sleep(0.5)
+            off(channel)
+            time.sleep(0.5)
+    
+    elif num_cycles == 6:
+        for i in range(0, num_cycles):
+            on(channel)
+            time.sleep(0.25)
+            off(channel)
+            time.sleep(0.75)
+
 
 # print_cycle prints out which motor would be actived but does not activate it      
 def print_cycle(channel, num_cycles):
@@ -49,6 +65,7 @@ try:
                     alert(4)
                 else:
                     alert(6)
+                time.sleep(0.5)
             
         except RuntimeError as e:
             # If we get a reading error, just print it and keep truckin'
