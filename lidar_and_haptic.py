@@ -34,14 +34,14 @@ def cycle(channel, num_cycles):
             on(channel)
             time.sleep(0.5)
             off(channel)
-            time.sleep(0.5)
+            time.sleep(0.25)
     
     elif num_cycles == 6:
         for i in range(0, num_cycles):
             on(channel)
             time.sleep(0.25)
             off(channel)
-            time.sleep(0.75)
+            time.sleep(0.25)
 
 
 # print_cycle prints out which motor would be actived but does not activate it      
