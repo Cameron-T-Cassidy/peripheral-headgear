@@ -9,6 +9,7 @@ try:
     while True:
         direction = input("Enter direction of input: ")
         num_cycles = int(input("Enter number of cycles: "))
+        text = direction + " " + num_cycles
         s.send(bytes(text, 'UTF-8'))
         # a cycle is currently a total of 0.5 seconds
         # adjust cycle length in the function 'cycle' in the file 'vibration_motors'
