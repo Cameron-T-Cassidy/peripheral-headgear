@@ -23,7 +23,7 @@ The computer vision lagorithm uses Python 3 and OpenCV. You can read about dowlo
 ```
  export DISPLAY=:0
  ```
-detector.py and HOG.xml can be ran using:
+detector.py, HOG.xml, and a video named "input.mp4" can be ran using:
 ```
 python detector.py
 ```
