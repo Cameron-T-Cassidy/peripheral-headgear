@@ -15,9 +15,10 @@ try:
         # a cycle is currently a total of 0.5 seconds
         # adjust cycle length in the function 'cycle' in the file 'vibration_motors'
         # make sure to adjust cycle_length here if you adjust cycle length time in 'vibration_motors'
-        cycle_length = 0.5
-        sleep_time = int(num_cycles) * cycle_length
-        time.sleep(sleep_time)
+        if num_cycles > 0:
+            cycle_length = 0.5
+            sleep_time = int(num_cycles) * cycle_length
+            time.sleep(sleep_time)
 
 except KeyboardInterrupt:
     print("Ctrl-C Pressed: Exiting Program")
