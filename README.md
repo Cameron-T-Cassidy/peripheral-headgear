@@ -1,6 +1,6 @@
 # peripheral-headgear
 
-Code to control a LIDAR connected to a Raspberry Pi via its I2C GPIO pins can be found in the input folder.
+Code to control a LIDAR connected to a Raspberry Pi via its I2C GPIO pins can be found in the input folder. An OpenCV program, to be used with a regular (non-thermal) camera, can be found in the Computer Vision subfolder in input. 
 
 Code to control vibration motor(s) connected to a Raspberry Pi via its GPIO pins can be found in the output folder. At the top of files that in the output folder that control vibration motors, make sure to check which GPIO pin is specified in that file and which GPIO configuration is being used (GPIO.BOARD or GPIO.BCM) as this changes the number associated with the same GPIO pin.
 
