@@ -15,7 +15,7 @@ try:
         # adjust cycle length in the function 'cycle' in the file 'vibration_motors'
         # make sure to adjust cycle_length here if you adjust cycle length time in 'vibration_motors'
         cycle_length = 0.5
-        sleep_time = num_cycles * cycle_length
+        sleep_time = int(num_cycles) * cycle_length
         time.sleep(sleep_time)
 
 except KeyboardInterrupt:
