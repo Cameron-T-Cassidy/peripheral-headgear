@@ -1,4 +1,5 @@
 import socket
+import time
 
 serverMACAddress = 'B8:27:EB:FE:88:6E' # The MAC address of pi zero, which is connected to vibration motors.
 port = 1
