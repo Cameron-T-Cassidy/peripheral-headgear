@@ -1,7 +1,7 @@
 # Headgear Peripheral Design Documentation
 
 ## Team Organization
-Our team was separated into two teams, input and output. Members of both teams assisted in setting up the principle hardware, such as the RasPi. 
+Our team was separated into two teams, input and output. Members of both teams assisted in setting up the principle hardware, which consisted of a RasPi 4, breadboard, and ski helmet. 
 
 ### Input Team
 The input team consisted of Cameron Cassidy, Eric Anderson, Jonathan Pape, and Josiah Hamid-Khani. They researched various input devises for spatial perception and decided to use a LIDAR Lite for the initial prototype. After additional research, they opted to use a thermal camera and computer vision for the final product. Due to COVID, the thermal camera did not come in. However, an algorithm using OpenCV was developed and lightly tested. 
