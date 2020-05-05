@@ -1,4 +1,4 @@
-
+# Contribution Guide
 This project is not currently looking for more contributors. Due to the hardware based nature of the project, 
 any software modifications will not be physically implemented on our original helmet prototype.
 
